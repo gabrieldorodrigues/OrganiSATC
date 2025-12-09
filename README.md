@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OrganiSATC
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0-38B2AC?style=flat&logo=tailwind-css)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat)
 
-First, run the development server:
+Um aplicativo web de organização acadêmica desenvolvido para ajudar estudantes a gerenciar suas tarefas, horários e compromissos de forma eficiente.
+
+## Tecnologias
+
+- **Next.js 15** - Framework React para aplicações web modernas
+- **TypeScript** - JavaScript com tipagem estática
+- **Tailwind CSS** - Framework CSS utilitário
+- **Shadcn UI** - Biblioteca de componentes reutilizáveis
+- **Lucide React** - Conjunto de ícones modernos
+
+## Funcionalidades Principais
+
+### Dashboard Inteligente
+
+O dashboard oferece uma visão completa do seu progresso acadêmico com estatísticas em tempo real, incluindo tarefas pendentes, sequência de dias consecutivos de uso e acesso rápido a todas as funcionalidades do aplicativo.
+
+### Gerenciamento de Tarefas
+
+Sistema completo de gestão de tarefas com suporte a filtros por status, priorização por níveis de urgência, vinculação com disciplinas específicas e acompanhamento de prazos de entrega.
+
+### Calendário Acadêmico
+
+Visualização mensal integrada que permite acompanhar eventos diários, próximos compromissos e categorização automática por tipo de atividade como aulas, provas e trabalhos.
+
+### Otimização de Tempo
+
+Ferramenta que analisa sua grade horária e identifica automaticamente períodos livres, oferecendo sugestões inteligentes de como aproveitar melhor esses intervalos para estudos e outras atividades.
+
+### Timer Pomodoro
+
+Implementação da técnica Pomodoro com sessões de foco de 25 minutos, intervalos de descanso de 5 minutos e rastreamento do número de sessões completadas.
+
+### Sistema de Gamificação
+
+Motivação através de níveis e experiência (XP), badges desbloqueáveis por conquistas, acompanhamento de sequências de dias consecutivos e estatísticas visuais de produtividade.
+
+## Começando
+
+### Instalação
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clonar o repositório
+git clone https://github.com/seu-usuario/organistc.git
+
+# Entrar no diretório
+cd organistc
+
+# Instalar dependências
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Executando o Projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Modo de desenvolvimento
+npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Build para produção
+npm run build
 
-## Learn More
+# Servidor de produção
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+O aplicativo estará disponível em `http://localhost:3000`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Estrutura do Projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+academia-app/
+├── app/
+│   ├── page.tsx           # Dashboard principal
+│   ├── tarefas/
+│   │   └── page.tsx       # Gerenciamento de tarefas
+│   ├── horarios/
+│   │   └── page.tsx       # Otimização de tempo
+│   ├── calendario/
+│   │   └── page.tsx       # Calendário acadêmico
+│   ├── pomodoro/
+│   │   └── page.tsx       # Timer Pomodoro
+│   ├── perfil/
+│   │   └── page.tsx       # Perfil e conquistas
+│   ├── layout.tsx
+│   └── globals.css
+├── components/
+│   └── ui/                # Componentes Shadcn UI
+├── lib/
+│   └── utils.ts
+└── package.json
+```
 
-## Deploy on Vercel
+## Roadmap
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Funcionalidades planejadas para as próximas versões:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Integração com Google Calendar para sincronização automática
+- Sistema de notificações push para lembretes importantes
+- Relatórios detalhados de produtividade
+- Persistência de dados com backend
+- Autenticação de usuários
+- Sincronização em nuvem entre dispositivos
+- Suporte a temas personalizáveis
+- Modo escuro
+
+Melhorias de experiência do usuário:
+
+- Animações de transição suaves
+- Feedback visual aprimorado
+- Tutorial inicial para novos usuários
+- Modais interativos para criação rápida
+- Edição inline de tarefas e eventos
+- Drag and drop para reordenação
+
+## Equipe de Desenvolvimento
+
+- Dauane Neves Gerônimo
+- Erik Schneider Pacheco
+- Gabriel De Oliveira Rodrigues
+- Gabriel Willian Bernardino Duarte
+
+## Licença
+
+Este projeto foi desenvolvido como parte de um trabalho acadêmico na disciplina de Engenharia de Software.
+
+---
+
+Desenvolvido com dedicação por estudantes do SATC 2024/2025
