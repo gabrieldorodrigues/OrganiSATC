@@ -12,7 +12,15 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { Calendar, CheckSquare, Timer, Trophy, BookOpen, Home as HomeIcon, Flame } from "lucide-react";
+import {
+  Calendar,
+  CheckSquare,
+  Timer,
+  Trophy,
+  BookOpen,
+  Home as HomeIcon,
+  Flame,
+} from "lucide-react";
 
 export default function Home() {
   // Dados mockados para demonstração
@@ -44,7 +52,7 @@ export default function Home() {
       <header className="bg-green-800 border-b border-green-900 sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-xl font-bold text-white">OrganiSATC</h1>
+            <h1 className="text-xl font-bold text-white">AcademiCo </h1>
 
             <div className="flex items-center gap-2">
               <Flame className="h-5 w-5 text-white" />
@@ -61,11 +69,17 @@ export default function Home() {
         {/* Welcome Section */}
         <div className="mb-6 flex items-center justify-between">
           <div>
-            <h2 className="text-2xl font-bold mb-1 text-green-800">Olá, Estudante! 👋</h2>
+            <h2 className="text-2xl font-bold mb-1 text-green-800">
+              Olá, Estudante! 👋
+            </h2>
             <p className="text-gray-600">Vamos organizar seu dia acadêmico</p>
           </div>
           <Link href="/perfil">
-            <Button variant="ghost" size="icon" className="hover:bg-green-50 relative">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="hover:bg-green-50 relative"
+            >
               <Trophy className="h-6 w-6 text-yellow-600" />
               <span className="absolute top-1 right-1 flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
@@ -130,7 +144,9 @@ export default function Home() {
                     <CheckSquare className="h-6 w-6 text-green-800" />
                   </div>
                   <h4 className="font-semibold text-sm">Tarefas</h4>
-                  <p className="text-xs text-gray-600">{tasksToday - tasksCompleted} pendentes</p>
+                  <p className="text-xs text-gray-600">
+                    {tasksToday - tasksCompleted} pendentes
+                  </p>
                 </CardContent>
               </Card>
             </Link>
